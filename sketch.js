@@ -37,6 +37,8 @@ function setup(){
 
 function draw() {
     background(rgb(169,169,169));
+    text(getAudioContext().state, 20, 20);
+    getAudioContext().resume(); 
     edges=createEdgeSprites();
     ball.bounceOff(edges);
 
